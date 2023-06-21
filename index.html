@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passGen</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <label class="pass-length-input">
+                Password length
+                <input name="length" type="text" required>
+            </label>
+            <label for="check-uppercase">
+                <input class="form-checkbox-input" id="check-uppercase" name="uppercase" type="checkbox"
+                    value="checkbox">
+                <span class="checkbox-text">add uppercase leters</span>
+            </label>
+            <label for="check-numbers">
+                <input class="form-checkbox-input" id="check-numbers" name="numbers" type="checkbox" value="checkbox">
+                <span class="checkbox-text">add numbers</span>
+            </label>
+            <label for="check-special-characters">
+                <input class="form-checkbox-input" id="check-special-characters" name="specialCharacters"
+                    type="checkbox" value="checkbox">
+                <span class="checkbox-text">add special-characters</span>
+            </label>
+            <button type="submit">generate pass</button>
+        </form>
+        <span class="password"></span>
+    </div>
+    <script src="./pass-generator.js"></script>
+</body>
+</html>
